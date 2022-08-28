@@ -4,7 +4,7 @@ import "google/protobuf/timestamp.proto";
 
 package hashsafe;
 
-option go_package = "/";
+option go_package = "/pb";
 
 service HashSafe {
     rpc Access(stream Request) returns (stream Response) {}
