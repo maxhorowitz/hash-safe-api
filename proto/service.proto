@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+package hashsafe;
+
+option go_package = "github.com/maxhorowitz/hashsafe;hashsafe";
+
+service HashSafe {
+    rpc Access(stream Request) returns (stream Response) {}
+}
+
+message Response {
+    int32 bytesRead = 1;
+}
+
+message Request {
+    google.protobuf.Timestamp time = 1;
+    bytes data = 2;
+}
