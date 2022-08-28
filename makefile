@@ -7,5 +7,5 @@ gen:
 clean:
 	rm -rf pb/*
 
-server:
-	grpcurl --plaintext --msg-template -d @ localhost:9092 HashSafe/Access
+lint:
+	golangci-lint run

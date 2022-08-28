@@ -1,5 +1,6 @@
 package main
 
-func main() {
-	println("Hello world!")
-}
+// nolint:unused
+const IP_AND_PORT = ":9092"
+
+func main() {}
