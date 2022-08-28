@@ -1,4 +1,4 @@
 package config
 
 // nolint:unused
-const IP_AND_PORT = ":9092"
+var IP_AND_PORT = ":9092"
