@@ -4,7 +4,7 @@ import "google/protobuf/timestamp.proto";
 
 package hashsafe;
 
-option go_package = "github.com/maxhorowitz/hashsafe;hashsafe";
+option go_package = "/";
 
 service HashSafe {
     rpc Access(stream Request) returns (stream Response) {}
